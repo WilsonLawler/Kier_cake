@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>綺兒甜點屋 Kier Cake</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="icon/kier.ico" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- FLIKITY -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- ********ANIMATE.CSS has included (WOW)******** -->
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- my rwd css -->
+    <link rel="stylesheet" href="css/rwd.css" />
+
+    <!-- snow flake -->
+    <style>
+      /* customizable snowflake styling */
+      .snowflake {
+        color: #fff;
+        font-size: 1.2em;
+        font-family: Arial;
+        text-shadow: 0 0 1px #000;
+      }
+
+      @-webkit-keyframes snowflakes-fall {
+        0% {
+          top: -10%;
+        }
+        100% {
+          top: 100%;
+        }
+      }
+      @-webkit-keyframes snowflakes-shake {
+        0% {
+          -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+        }
+        50% {
+          -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+        }
+        100% {
+          -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+        }
+      }
+      @keyframes snowflakes-fall {
+        0% {
+          top: -10%;
+        }
+        100% {
+          top: 100%;
+        }
+      }
+      @keyframes snowflakes-shake {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(80px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+      .snowflake {
+        position: fixed;
+        top: -10%;
+        z-index: 9999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+        -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+        -webkit-animation-duration: 10s, 3s;
+        -webkit-animation-timing-function: linear, ease-in-out;
+        -webkit-animation-iteration-count: infinite, infinite;
+        -webkit-animation-play-state: running, running;
+        animation-name: snowflakes-fall, snowflakes-shake;
+        animation-duration: 10s, 3s;
+        animation-timing-function: linear, ease-in-out;
+        animation-iteration-count: infinite, infinite;
+        animation-play-state: running, running;
+      }
+      .snowflake:nth-of-type(0) {
+        left: 1%;
+        -webkit-animation-delay: 0s, 0s;
+        animation-delay: 0s, 0s;
+      }
+      .snowflake:nth-of-type(1) {
+        left: 10%;
+        -webkit-animation-delay: 1s, 1s;
+        animation-delay: 1s, 1s;
+      }
+      .snowflake:nth-of-type(2) {
+        left: 20%;
+        -webkit-animation-delay: 6s, 0.5s;
+        animation-delay: 6s, 0.5s;
+      }
+      .snowflake:nth-of-type(3) {
+        left: 30%;
+        -webkit-animation-delay: 4s, 2s;
+        animation-delay: 4s, 2s;
+      }
+      .snowflake:nth-of-type(4) {
+        left: 40%;
+        -webkit-animation-delay: 2s, 2s;
+        animation-delay: 2s, 2s;
+      }
+      .snowflake:nth-of-type(5) {
+        left: 50%;
+        -webkit-animation-delay: 8s, 3s;
+        animation-delay: 8s, 3s;
+      }
+      .snowflake:nth-of-type(6) {
+        left: 60%;
+        -webkit-animation-delay: 6s, 2s;
+        animation-delay: 6s, 2s;
+      }
+      .snowflake:nth-of-type(7) {
+        left: 70%;
+        -webkit-animation-delay: 2.5s, 1s;
+        animation-delay: 2.5s, 1s;
+      }
+      .snowflake:nth-of-type(8) {
+        left: 80%;
+        -webkit-animation-delay: 1s, 0s;
+        animation-delay: 1s, 0s;
+      }
+      .snowflake:nth-of-type(9) {
+        left: 90%;
+        -webkit-animation-delay: 3s, 1.5s;
+        animation-delay: 3s, 1.5s;
+      }
+    </style>
+  </head>
+
+  <body id="home">
+    <!-- Start your project here -->
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark rgba-red-light fixed-top scrolling-navbar"
+      id="main-nav">
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">綺兒 Kier Cake</a>
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav"
+          aria-controls="basicExampleNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="animated-icon1">
+            <span class="blue lighten-5"></span
+            ><span class="blue lighten-5"></span
+            ><span class="blue lighten-5"></span>
+          </div>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"
+                >首頁 <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#ourSpecial">特色</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ourCakes">各項商品</a></li>
+
+            <!-- Dropdown -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#join_us"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >訂閱好康</a
+              >
+            </li>
+          </ul>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+      </div>
+    </nav>
+    <!-- /.Navbar -->
+
+    <!-- header start -->
+    <header>
+      <div class="header-overlay">
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- center-box -->
+            <div class="col-10 col-md-8 header__center-box">
+              <div
+                class="font-weight-bold text-white text-center header__title"
+              >
+                綺兒甜點屋
+              </div>
+
+              <div class="main-carousel">
+                <div class="carousel-cell view">
+                  <img
+                    src="my-img/annie-spratt-96526-unsplash-min.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="mask rgba-pink-slight flex-center">
+                    <div
+                      class="h3 text-white carousel-cell__caption p-2 rgba-red-strong"
+                    >
+                      超人氣首選 - 彩虹蛋糕
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell view">
+                  <img
+                    src="my-img/j-luis-esquivel-753459-unsplash-min.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="mask rgba-pink-slight flex-center">
+                    <div
+                      class="h3 text-white carousel-cell__caption p-2 rgba-red-strong"
+                    >
+                      每日限量 - 主廚經典舒芙蕾
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell view">
+                  <img
+                    src="my-img/jordane-mathieu-539945-unsplash-min.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="mask rgba-pink-slight flex-center">
+                    <div
+                      class="h3 text-white carousel-cell__caption p-2 rgba-red-strong"
+                    >
+                      百年典雅 - 義式手工提拉米蘇
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- center-box-end -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- section__special start -->
+    <section class="section__special rgba-red-light" id="ourSpecial">
+      <div class="container py-3">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between wow fadeIn"
+        >
+          <!-- our special wrapper -->
+          <div class=" section__special__box view mb-3">
+            <div
+              class="mask rgba-blue-light
+            flex-center"
+            >
+              <div class="h1 text-white p-2">用心投入</div>
+            </div>
+          </div>
+          <div class=" section__special__box view mb-3">
+            <div
+              class="mask rgba-green-light
+            flex-center"
+            >
+              <div class="h1 text-white p-2">手工製作</div>
+            </div>
+          </div>
+          <div class=" section__special__box view mb-3">
+            <div
+              class="mask rgba-red-light
+            flex-center"
+            >
+              <div class="h1 text-white p-2">一同成長</div>
+            </div>
+          </div>
+          <!-- our special wrapper -->
+        </div>
+      </div>
+    </section>
+    <!-- section__special end -->
+
+    <section class="section__cakelist py-3" id="ourCakes">
+      <div class="container-fluid">
+        <div class="row py-3 wow fadeIn">
+          <div class="col-md-3">
+            <div class="list-group sticky-top mb-3">
+              <a
+                class="list-group-item list-group-item-action active"
+                id="choco-list"
+                data-toggle="list"
+                href="#choco"
+                role="tab"
+                aria-controls="濃情巧克力系列"
+              >
+                濃情巧克力系列
+              </a>
+              <a
+                class="list-group-item list-group-item-action"
+                id="french-list"
+                data-toggle="list"
+                href="#french"
+                role="tab"
+                aria-controls="法式創意甜品"
+              >
+                法式創意甜品
+              </a>
+              <a
+                class="list-group-item list-group-item-action"
+                id="classic-list"
+                data-toggle="list"
+                href="#classic"
+                role="tab"
+                aria-controls="經典蛋糕系列"
+              >
+                經典蛋糕系列
+              </a>
+              <a class="list-group-item list-group-item-action disabled">
+                聖誕節限定甜點 --敬請期待🎄
+              </a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content" id="nav-tabContent">
+              <!-- 巧克力 -->
+              <div
+                class="tab-pane fade show active"
+                id="choco"
+                role="tabpanel"
+                aria-labelledby="choco-list"
+              >
+                <div class="row">
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/harnish-ganatra-771459-unsplash-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">巧克力淇淋巧心</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 120元(兩個)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/will-echols-540490-unsplash-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">小紅莓黑森林</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 100元(片)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/cris-dinoto-412439-unsplash-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">濃情可可草莓派</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 320元(6吋)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-3">
+                      <!-- Card -->
+                      <div class="card h-100">
+                        <!-- Card image -->
+                        <img
+                          class="card-img-top"
+                          src="my-img/harnish-ganatra-771459-unsplash-min.jpg"
+                          alt="Card image cap"
+                        />
+  
+                        <!-- Card content -->
+                        <div class="card-body">
+                          <!-- Title -->
+                          <h4 class="card-title">巧克力淇淋巧心</h4>
+                          <!-- Text -->
+                          <p class="card-text">$ 120元(兩個)</p>
+                          <!-- Button -->
+                        </div>
+                      </div>
+                      <!-- Card -->
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                      <!-- Card -->
+                      <div class="card h-100">
+                        <!-- Card image -->
+                        <img
+                          class="card-img-top"
+                          src="my-img/will-echols-540490-unsplash-min.jpg"
+                          alt="Card image cap"
+                        />
+  
+                        <!-- Card content -->
+                        <div class="card-body">
+                          <!-- Title -->
+                          <h4 class="card-title">小紅莓黑森林</h4>
+                          <!-- Text -->
+                          <p class="card-text">$ 100元(片)</p>
+                          <!-- Button -->
+                        </div>
+                      </div>
+                      <!-- Card -->
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                      <!-- Card -->
+                      <div class="card h-100">
+                        <!-- Card image -->
+                        <img
+                          class="card-img-top"
+                          src="my-img/cris-dinoto-412439-unsplash-min.jpg"
+                          alt="Card image cap"
+                        />
+  
+                        <!-- Card content -->
+                        <div class="card-body">
+                          <!-- Title -->
+                          <h4 class="card-title">濃情可可草莓派</h4>
+                          <!-- Text -->
+                          <p class="card-text">$ 320元(6吋)</p>
+                          <!-- Button -->
+                        </div>
+                      </div>
+                      <!-- Card -->
+                    </div>
+                </div>
+              </div>
+              <!-- 巧克力end -->
+
+              <!-- 法式 -->
+              <div
+                class="tab-pane fade"
+                id="french"
+                role="tabpanel"
+                aria-labelledby="french-list"
+              >
+                <div class="row">
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/brigitte-tohm-329290-unsplash-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">經典馬卡龍系列</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 80元(個)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/jennifer-schmidt-462966-unsplash-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">焦糖熔岩慕斯</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 350元(6吋)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/melissa-walker-horn-605715-unsplash-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">繽紛巴黎杯子蛋糕</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 65元(個)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+              </div>
+              <!-- 法式end -->
+
+              <!-- 經典 -->
+              <div
+                class="tab-pane fade"
+                id="classic"
+                role="tabpanel"
+                aria-labelledby="classic-list"
+              >
+                <div class="row">
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/mink-mingle-762115-unsplash-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">藍莓重乳酪蛋糕</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 95元(片)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-3">
+                    <!-- Card -->
+                    <div class="card h-100">
+                      <!-- Card image -->
+                      <img
+                        class="card-img-top"
+                        src="my-img/alison-marras-323016-unsplash (1)-min.jpg"
+                        alt="Card image cap"
+                      />
+
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">紅莓楓糖鬆餅塔</h4>
+                        <!-- Text -->
+                        <p class="card-text">$ 300元(份)</p>
+                        <!-- Button -->
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+              </div>
+              <!-- 經典end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rgba-red-light py-3">
+      <div class="container text-center">
+        <div class="my-2">
+          <a class="btn-rounded btn-lg purple-gradient" href="#"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <!-- <a class="btn-rounded btn-lg purple-gradient"
+            ><i class="fa fa-instagram"></i
+          ></a> -->
+          <!--
+            <a class="btn-rounded btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
+          -->
+        </div>
+        <p class="m-0">
+          © <span id="currentYear"></span> Copyright 綺兒 Kier Cake
+        </p>
+      </div>
+    </footer>
+
+    <!-- *******SNOW********* -->
+
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+    </div>
+    <!-- *******SNOW********* -->
+
+    <!-- header ends -->
+
+    <!-- /Start your project here -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="join_us"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-notify modal-pink" role="document">
+        <!-- Content -->
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header text-center">
+            <h4 class="modal-title white-text w-100 font-weight-bold py-2">
+              訂閱好康
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!-- Body -->
+          <form class="needs-validation" novalidate>
+            <div class="modal-body">
+              <div class="md-form mb-5">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="form3" class="form-control" required />
+                <div class="invalid-feedback">請輸入您的姓名</div>
+                <label for="form3">姓名</label>
+              </div>
+
+              <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="form2" class="form-control" required />
+                <div class="invalid-feedback">請輸入您的信箱</div>
+                <label for="form2">Email</label>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer justify-content-center">
+              <button
+                type="submit"
+                class="btn btn-outline-warning waves-effect"
+              >
+                <span class="h5"
+                  >送出 <i class="fa fa-paper-plane-o ml-1"></i
+                ></span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- /.Content -->
+      </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- FLIKITY -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      // WOW
+
+      new WOW().init();
+
+      // icon-animate-here
+
+      // Works everywhere
+      $(document).ready(function() {
+
+        // smooth scroll
+        $("#main-nav a").on("click", function(e) {
+          if (this.hash !== "") {
+            e.preventDefault();
+
+            const hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              800,
+              function() {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+
+        
+        // Hide/show animation hamburger function
+        $(".navbar-toggler").on("click", function() {
+          // Take this line to first hamburger animations
+          $(".animated-icon1").toggleClass("open");
+        });
+
+        // CAROUSEL
+        $(".main-carousel").flickity({
+          // options
+          cellAlign: "left",
+          contain: true,
+          wrapAround: true,
+          prevNextButtons: false,
+          autoPlay: 2000
+        });
+
+        // YEAR
+        $("#currentYear").text(new Date().getFullYear());
+      });
+
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener(
+                "submit",
+                function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
+</html>
